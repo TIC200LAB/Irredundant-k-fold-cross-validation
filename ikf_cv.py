@@ -221,8 +221,7 @@ class IStratifiedKFold(StratifiedKFold):
                 ]
                 last_inner_rng = inner_rng
             else:
-                # Correct sklearn semantics: no hidden shuffling when
-                # shuffle=False.  
+ 
                 inner = StratifiedKFold(
                     n_splits=n_sub,
                     shuffle=False,
@@ -338,6 +337,6 @@ class IKFold(KFold):
             yield train, test
 
 
-# Descriptive aliases.  Appendix E uses IStratifiedKFold.
+# Descriptive aliases.
 IrredundantStratifiedKFold = IStratifiedKFold
 IrredundantKFold = IKFold
