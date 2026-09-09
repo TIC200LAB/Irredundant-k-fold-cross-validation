@@ -8,11 +8,11 @@ Given `k` outer folds, each fold is divided into `k-1` stratified subfolds. When
 
 Therefore,
 
-\[
+$$
 |Test_i| \approx \frac{n}{k},
 \qquad
 |Train_i| \approx \frac{n}{k},
-\]
+$$
 
 and the training sets are mutually disjoint.
 
