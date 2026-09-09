@@ -32,7 +32,7 @@ Across the three iterations, every sample is therefore used once for testing and
 The API follows `scikit-learn`'s `StratifiedKFold`:
 
 ```python
-from ikf import IStratifiedKFold
+from ikf_cv import IStratifiedKFold
 
 cv = IStratifiedKFold(
     n_splits=5,
